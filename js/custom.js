@@ -31,15 +31,15 @@ function moveProgressBar() {
         left: .95*getProgressWrapWidth
     }, animationLength);
     $('.progress-bar2').stop().animate({
-        left: .80*getProgressWrapWidth
+        left: .84*getProgressWrapWidth
     }, animationLength);
     $('.progress-bar3').stop().animate({
-        left: .85*getProgressWrapWidth
+        left: .92*getProgressWrapWidth
     }, animationLength);
     $('.progress-bar4').stop().animate({
-        left: .58*getProgressWrapWidth
+        left: .88*getProgressWrapWidth
     }, animationLength);
     $('.progress-bar5').stop().animate({
-        left: .70*getProgressWrapWidth
+        left: .75*getProgressWrapWidth
     }, animationLength);
 }

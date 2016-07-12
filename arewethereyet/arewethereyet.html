@@ -1,0 +1,117 @@
+<style>
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.rafael
+{
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         1.5s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+#rainbow {
+    background: red; /* not working, let's see some red */
+    background: -moz-linear-gradient( top ,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 255, 0, 1) 15%,
+        rgba(0, 255, 0, 1) 30%,
+        rgba(0, 255, 255, 1) 50%,
+        rgba(0, 0, 255, 1) 65%,
+        rgba(255, 0, 255, 1) 80%,
+        rgba(255, 0, 0, 1) 100%);
+    background: -webkit-gradient(linear,  left top,  left bottom, 
+        color-stop(0%, rgba(255, 0, 0, 1)), 
+        color-stop(15%, rgba(255, 255, 0, 1)),
+        color-stop(30%, rgba(0, 255, 0, 1)),
+        color-stop(50%, rgba(0, 255, 255, 1)),
+        color-stop(65%, rgba(0, 0, 255, 1)),
+        color-stop(80%, rgba(255, 0, 255, 1)),
+        color-stop(100%, rgba(255, 0, 0, 1)));
+}
+</style>
+
+
+</head>
+<body id="rainbow">
+<audio autoplay loop="infinite">
+	<source src="banger.mp3" type="audio/mpeg">
+	HAI
+</audio>
+<audio autoplay>
+    <source src="heyy.mp3" type="audio/mpeg">
+    HAI
+</audio>
+<iframe width="0" height="0" src="https://www.youtube.com/embed/y06VPZ-vznA?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+<marquee scrollamount="100" behavior="alternate" >
+
+<title>Percentage of Hell Completed</title>
+    <h1><u>The Percentage of Hell Completed:</u></h1>
+    <h1>Junior Year: <tag id="percentleftjunior"></tag></h1>
+    <h1>Graduation: <tag id="percentleft"></tag></h1>
+    <h6>By <a href="http://timlupo.com">Tim Lupo</a></h6>
+    <script>
+        refresh();
+        function refresh() { setInterval(percentageLeft, 10);  }
+        function percentageLeft() {
+            var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+            var firstDate = new Date(2016,05,23);
+            var secondDate = new Date();
+            var thirdDate = new Date(2015, 08, 03);
+            var fourthDate = new Date(2013, 09, 09);
+            var fifthDate = new Date(2017, 06, 22);
+            //junior year
+            var diffDays1Junior = Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay));
+            var diffDays2Junior = Math.abs((firstDate.getTime() - thirdDate.getTime())/(oneDay));
+            var timeleftjunior = 1;
+            //total high school
+            var diffDays1 = Math.abs((fifthDate.getTime() - secondDate.getTime())/(oneDay));
+            var diffDays2 = Math.abs((fourthDate.getTime() - fifthDate.getTime())/(oneDay));
+            var timeleft = (diffDays2-diffDays1)/diffDays2;
+            //update headers
+            document.getElementById("percentleftjunior").innerHTML = "WE FUCKING DONE BITCHESSSSSSSSS";
+            document.getElementById("percentleft").innerHTML = timeleft*100 + "%";
+        }
+    </script>
+<p style="font-size:500%;" class="rafael">ATTITUDE IS EVERYTHING
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+<p style="font-size:500%;" class="rafael">@MINGXUA @PINTO
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</marquee>
+
+</body>
+</html>
+
+
